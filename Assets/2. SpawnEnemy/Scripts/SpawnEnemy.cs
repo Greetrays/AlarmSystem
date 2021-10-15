@@ -20,19 +20,16 @@ public class SpawnEnemy : MonoBehaviour
     {
         _currentTime += Time.deltaTime;
 
-        if (_currentTime >= _targetTime)
+        if (_currentTime >= _targetTime && _spawnPoints[_currentPoint].EnemyCounter < _spawnPoints[_currentPoint].EnemyNumber)
         {
-            if (_currentPoint + 1 < _spawnPoints.Length)
-            {
-                _currentPoint++;
-            }
-            else
+            _spawnPoints[_currentPoint].GetComponent<SpawnPoint>().Spawn();
+            _currentPoint++;
+            _currentTime = 0;
+
+            if (_currentPoint >= _spawnPoints.Length)
             {
                 _currentPoint = 0;
             }
-
-            _spawnPoints[_currentPoint].GetComponent<SpawnPoint>().Spawn();
-            _currentTime = 0;
         }
     }
 }
