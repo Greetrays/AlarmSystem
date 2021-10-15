@@ -9,6 +9,7 @@ public class Signalized : MonoBehaviour
     [SerializeField] private AudioSource _audioSource;
 
     private bool _enabled;
+    private Coroutine _oscillateSound;
 
     private void Start()
     {
@@ -16,9 +17,7 @@ public class Signalized : MonoBehaviour
     }
 
     private void Update()
-    {
-        _audioSource.volume = Mathf.MoveTowards(_audioSource.volume, _targetVolume, _maxStep * Time.deltaTime);
-
+    {       
         if (_enabled == true)
         {
             if (_audioSource.volume >= _targetVolume)
@@ -32,10 +31,20 @@ public class Signalized : MonoBehaviour
         }
     }
 
+    private IEnumerator OscillateSound()
+    {
+        while (true)
+        {
+            _audioSource.volume = Mathf.MoveTowards(_audioSource.volume, _targetVolume, _maxStep * Time.deltaTime);
+            yield return null;
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent<Player>(out Player player))
         {
+            _oscillateSound = StartCoroutine(OscillateSound());
             _audioSource.Play();
             _enabled = true;
         }
@@ -46,6 +55,7 @@ public class Signalized : MonoBehaviour
         if (other.TryGetComponent<Player>(out Player player))
         {
             _audioSource.Stop();
+            StopCoroutine(_oscillateSound);
             _enabled = false;
         }
     }

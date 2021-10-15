@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{23D7548C-C19C-4435-344E-A3701DF6D441}</ProjectGuid>
+    <ProjectGuid>{957A0BA2-348D-8342-DDD5-A6804E50C69A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -62,8 +62,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Player.cs" />
-    <Compile Include="Assets\Scripts\Signalized.cs" />
+    <Compile Include="Assets\1. AlarmSystem\Scripts\Player.cs" />
+    <Compile Include="Assets\1. AlarmSystem\Scripts\Signalized.cs" />
+    <Compile Include="Assets\2. SpawnEnemy\Scripts\Enemy.cs" />
+    <Compile Include="Assets\2. SpawnEnemy\Scripts\SpawnEnemy.cs" />
+    <Compile Include="Assets\2. SpawnEnemy\Scripts\SpawnPoint.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Program Files/2019.4.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -593,31 +596,31 @@
       <HintPath>D:/Program Files/2019.4.13f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>D:/Program Files/Unity Hub/IJunior HomeWork AlarmSystem/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>D:/Учёба/Курсы/Сакутин/Репо с дз/AlarmSystem/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>D:/Program Files/Unity Hub/IJunior HomeWork AlarmSystem/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>D:/Учёба/Курсы/Сакутин/Репо с дз/AlarmSystem/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>D:/Program Files/Unity Hub/IJunior HomeWork AlarmSystem/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>D:/Учёба/Курсы/Сакутин/Репо с дз/AlarmSystem/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:/Program Files/Unity Hub/IJunior HomeWork AlarmSystem/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>D:/Учёба/Курсы/Сакутин/Репо с дз/AlarmSystem/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>D:/Program Files/Unity Hub/IJunior HomeWork AlarmSystem/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>D:/Учёба/Курсы/Сакутин/Репо с дз/AlarmSystem/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>D:/Program Files/Unity Hub/IJunior HomeWork AlarmSystem/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>D:/Учёба/Курсы/Сакутин/Репо с дз/AlarmSystem/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>D:/Program Files/Unity Hub/IJunior HomeWork AlarmSystem/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>D:/Учёба/Курсы/Сакутин/Репо с дз/AlarmSystem/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>D:/Program Files/Unity Hub/IJunior HomeWork AlarmSystem/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>D:/Учёба/Курсы/Сакутин/Репо с дз/AlarmSystem/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>D:/Program Files/Unity Hub/IJunior HomeWork AlarmSystem/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>D:/Учёба/Курсы/Сакутин/Репо с дз/AlarmSystem/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup></ItemGroup>
