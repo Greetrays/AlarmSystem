@@ -65,7 +65,7 @@
     <Compile Include="Assets\1. AlarmSystem\Scripts\Player.cs" />
     <Compile Include="Assets\1. AlarmSystem\Scripts\Signalized.cs" />
     <Compile Include="Assets\2. SpawnEnemy\Scripts\Enemy.cs" />
-    <Compile Include="Assets\2. SpawnEnemy\Scripts\SpawnEnemy.cs" />
+    <Compile Include="Assets\2. SpawnEnemy\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\2. SpawnEnemy\Scripts\SpawnPoint.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Program Files/2019.4.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -615,6 +615,12 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>D:/Учёба/Курсы/Сакутин/Репо с дз/AlarmSystem/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>D:/Учёба/Курсы/Сакутин/Репо с дз/AlarmSystem/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Tilemap.Editor">
+      <HintPath>D:/Учёба/Курсы/Сакутин/Репо с дз/AlarmSystem/Library/ScriptAssemblies/Unity.2D.Tilemap.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
       <HintPath>D:/Учёба/Курсы/Сакутин/Репо с дз/AlarmSystem/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>

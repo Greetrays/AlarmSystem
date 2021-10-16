@@ -6,22 +6,23 @@ public class SpawnPoint : MonoBehaviour
 {
     [SerializeField] private Enemy _enemy;
     [SerializeField] private float _radius;
-    [SerializeField] private int _enemyNumber;
+    [SerializeField] private int _enemyCount;
 
-    private float _angelStep;
-
-    public int EnemyNumber => _enemyNumber;
-    public int EnemyCounter { get; private set; }
+    private float _angleStep;
+    private int _enemyCounter;
 
     private void Start()
     {
-        _angelStep = 360 / EnemyNumber;
+        _angleStep = 360 / _enemyCount;
     }
 
     public void Spawn()
     {
-        Vector3 newPosition = new Vector3(_radius * Mathf.Cos(_angelStep * EnemyCounter * Mathf.Deg2Rad), 0, _radius * Mathf.Sin(_angelStep * EnemyCounter * Mathf.Deg2Rad));
-        Instantiate(_enemy, transform.position + newPosition, Quaternion.identity);
-        EnemyCounter++;
+        if (_enemyCounter < _enemyCount)
+        {
+            Vector3 newPosition = new Vector3(_radius * Mathf.Cos(_angleStep * _enemyCounter * Mathf.Deg2Rad), 0, _radius * Mathf.Sin(_angleStep * _enemyCounter * Mathf.Deg2Rad));
+            Instantiate(_enemy, transform.position + newPosition, Quaternion.identity);
+            _enemyCounter++;
+        }
     }
 }
