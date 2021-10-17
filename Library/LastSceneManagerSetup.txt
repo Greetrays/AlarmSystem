@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/2. SpawnEnemy/Scenes/SpawnEnemy.unity
+- path: Assets/3. 2D Platform/Scenes/Platformer.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
