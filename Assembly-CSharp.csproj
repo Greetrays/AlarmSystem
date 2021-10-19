@@ -62,7 +62,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\1. AlarmSystem\Scripts\Player.cs" />
+    <Compile Include="Assets\1. AlarmSystem\Scripts\CapsulePlayer.cs" />
     <Compile Include="Assets\1. AlarmSystem\Scripts\Signalized.cs" />
     <Compile Include="Assets\2. SpawnEnemy\Scripts\Enemy.cs" />
     <Compile Include="Assets\2. SpawnEnemy\Scripts\EnemySpawner.cs" />
@@ -71,6 +71,7 @@
     <Compile Include="Assets\3. 2D Platform\Scripts\Ground.cs" />
     <Compile Include="Assets\3. 2D Platform\Scripts\Money.cs" />
     <Compile Include="Assets\3. 2D Platform\Scripts\MoneySpawner.cs" />
+    <Compile Include="Assets\3. 2D Platform\Scripts\Player.cs" />
     <Compile Include="Assets\3. 2D Platform\Scripts\PlayerController.cs" />
     <Reference Include="UnityEngine">
       <HintPath>D:/Program Files/2019.4.13f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
