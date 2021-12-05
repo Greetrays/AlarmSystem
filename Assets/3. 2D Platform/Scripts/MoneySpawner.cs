@@ -9,8 +9,11 @@ public class MoneySpawner : MonoBehaviour
     [SerializeField] private Money _money;
     [SerializeField] private float _delay;
 
+    private bool _isGame;
+
     private void Start()
     {
+        _isGame = false;
         StartCoroutine(SpawnMoney());
     }
 
@@ -18,8 +21,16 @@ public class MoneySpawner : MonoBehaviour
     {
         while (true)
         {
-            Instantiate(_money, new Vector3(Random.Range(_minDistance, _maxDistance), transform.position.y, 0), Quaternion.identity);
+            if (_isGame == true)
+            {
+                Instantiate(_money, new Vector3(Random.Range(_minDistance, _maxDistance), transform.position.y, 0), Quaternion.identity);
+            }
             yield return new WaitForSeconds(_delay);
         }
+    }
+
+    public void SwitchGame(bool isGame)
+    {
+        _isGame = isGame;
     }
 }
