@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 9168405451855842029}
   - component: {fileID: 9168405451855842030}
-  - component: {fileID: 9168405451855842031}
   - component: {fileID: 9168405451855842024}
+  - component: {fileID: 9168405451855842031}
   - component: {fileID: 915707851}
   - component: {fileID: 9168405451855842028}
   - component: {fileID: 915707852}
@@ -89,6 +89,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &9168405451855842024
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9168405451855842025}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!61 &9168405451855842031
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -115,27 +136,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.49367088, y: 0.9387702}
   m_EdgeRadius: 0
---- !u!50 &9168405451855842024
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9168405451855842025}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!95 &915707851
 Animator:
   serializedVersion: 3
@@ -183,6 +183,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 10
   _takeDamegeSound: {fileID: 8300000, guid: 03402639451205b4c9b3b85801f7aed0, type: 3}
+  _healthUI: {fileID: 0}
+  _healthBar: {fileID: 0}
 --- !u!114 &8984128733490212290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,6 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _countMoney: 0
   _moneySound: {fileID: 8300000, guid: 40d8fcd7ef37fc646aa9e9f34ee4e1ef, type: 3}
+  _moneyUI: {fileID: 0}
 --- !u!82 &915707859
 AudioSource:
   m_ObjectHideFlags: 0

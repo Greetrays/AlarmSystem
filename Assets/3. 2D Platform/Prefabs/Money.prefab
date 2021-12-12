@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 250436588107792173}
   - component: {fileID: 250436588107792172}
-  - component: {fileID: 250436588107792163}
   - component: {fileID: 250436588107792162}
+  - component: {fileID: 250436588107792163}
   - component: {fileID: 7649880456722554009}
+  - component: {fileID: -7683474533399632234}
   m_Layer: 0
   m_Name: Money
   m_TagString: Untagged
@@ -85,6 +86,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &250436588107792162
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250436588107792161}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!61 &250436588107792163
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -111,27 +133,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.40625, y: 0.53125}
   m_EdgeRadius: 0
---- !u!50 &250436588107792162
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250436588107792161}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
 --- !u!114 &7649880456722554009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,5 +143,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de929ec6bd1e3b142a4a65b2455e02cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-7683474533399632234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 250436588107792161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4760fa68da74f7c4aa9d6d26634c0ff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

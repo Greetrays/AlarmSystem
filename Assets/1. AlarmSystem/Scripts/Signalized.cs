@@ -42,7 +42,7 @@ public class Signalized : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.TryGetComponent<Player>(out Player player))
+        if (other.TryGetComponent<PlayerHealth>(out PlayerHealth player))
         {
             _oscillateSound = StartCoroutine(OscillateSound());
             _audioSource.Play();
@@ -52,7 +52,7 @@ public class Signalized : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.TryGetComponent<Player>(out Player player))
+        if (other.TryGetComponent<PlayerHealth>(out PlayerHealth player))
         {
             _audioSource.Stop();
             StopCoroutine(_oscillateSound);
