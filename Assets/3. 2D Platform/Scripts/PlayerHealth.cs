@@ -11,7 +11,6 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float _health;
     [SerializeField] private AudioClip _takeDamegeSound;
     [SerializeField] private AudioClip _usedHealth;
-    [SerializeField] private TMP_Text _healthUI;
     [SerializeField] private Slider _healthBar;
     [SerializeField] private float _speed;
 
@@ -30,7 +29,6 @@ public class PlayerHealth : MonoBehaviour
     private void Start()
     {
         _audioSource = GetComponent<AudioSource>();
-        _healthUI.text = _health.ToString();
         _healthBar.maxValue = _healthBar.value = _health;
     }
 
@@ -39,7 +37,6 @@ public class PlayerHealth : MonoBehaviour
         if (other.TryGetComponent<EnemyMovement>(out EnemyMovement enemy))
         {
             _health--;
-            _healthUI.text = _health.ToString();
             _audioSource.PlayOneShot(_takeDamegeSound); 
         }
     }
