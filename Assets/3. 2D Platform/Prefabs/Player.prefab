@@ -183,8 +183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _health: 10
   _takeDamegeSound: {fileID: 8300000, guid: 03402639451205b4c9b3b85801f7aed0, type: 3}
-  _healthUI: {fileID: 0}
-  _healthBar: {fileID: 0}
+  _usedHealth: {fileID: 8300000, guid: 3ca82b11620d0e24d94d95554e8838fe, type: 3}
 --- !u!114 &8984128733490212290
 MonoBehaviour:
   m_ObjectHideFlags: 0
