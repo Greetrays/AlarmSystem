@@ -5528,6 +5528,10 @@ PrefabInstance:
       propertyPath: _health
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 915707852, guid: 72820c74324da624cb1b44aab93ea32a, type: 3}
+      propertyPath: _maxHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 8984128733490212290, guid: 72820c74324da624cb1b44aab93ea32a,
         type: 3}
       propertyPath: _moneyUI

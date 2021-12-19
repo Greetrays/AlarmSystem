@@ -14,17 +14,23 @@ public class HealthBar : MonoBehaviour
 
     private void Start()
     {
-        _speed = 3f;
+        _speed = 2f;
         _healthBar = GetComponent<Slider>();
-        _healthBar.maxValue = _player.Health;
+        _healthBar.maxValue = _player.MaxHealth;
         _healthBar.value = _player.Health;
     }
 
-    private void Update()
+    public void StartChangeBar()
     {
-        if (_healthBar.value != _player.Health)
+        var changeBar = StartCoroutine(ChangeBar());
+    }
+
+    private IEnumerator ChangeBar()
+    {
+        while (_healthBar.value != _player.Health)
         {
             _healthBar.value = Mathf.MoveTowards(_healthBar.value, _player.Health, _speed * Time.deltaTime);
+            yield return 0;
         }
     }
 }

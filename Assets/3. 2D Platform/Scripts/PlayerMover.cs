@@ -26,7 +26,7 @@ public class PlayerMover : MonoBehaviour
     
     private void Update()
     {
-        if (_isGame == true)
+        if (_isGame)
         {
             if (Input.GetKey(KeyCode.D))
             {

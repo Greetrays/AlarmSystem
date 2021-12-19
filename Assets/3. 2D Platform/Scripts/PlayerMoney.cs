@@ -6,8 +6,7 @@ using TMPro;
 [RequireComponent(typeof(AudioSource))]
 
 public class PlayerMoney : MonoBehaviour
-{
-
+{ 
     [SerializeField] private int _countMoney;
     [SerializeField] private AudioClip _moneySound;
     [SerializeField] private TMP_Text _moneyUI;
