@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SpawnPoint : MonoBehaviour
 {
-    [SerializeField] private Enemy _enemy;
+    [SerializeField] private EnemyCapsule _enemy;
     [SerializeField] private float _radius;
     [SerializeField] private int _enemyCount;
 
