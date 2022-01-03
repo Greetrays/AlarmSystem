@@ -13,6 +13,7 @@ public class HealthBar : MonoBehaviour
     private float _speed;
     private bool _isWorkChangeBar;
     private Slider _healthBar;
+    private Coroutine _changeBar;
 
     private void Start()
     {
@@ -20,15 +21,16 @@ public class HealthBar : MonoBehaviour
         _healthBar = GetComponent<Slider>();
         _healthBar.maxValue = _player.MaxHealth;
         _healthBar.value = _player.Health;
+        _changeBar = null;
 
-        _player.OnChanged += StartChangeBar;
+        _player.Changed += OnStartChangeBar;
     }
 
-    private void StartChangeBar()
+    private void OnStartChangeBar()
     {
-        if (_isWorkChangeBar == false)
+        if (_changeBar == null)
         {
-            var changeBar = StartCoroutine(ChangeBar());
+            _changeBar = StartCoroutine(ChangeBar());
         }
     }
 
@@ -36,11 +38,10 @@ public class HealthBar : MonoBehaviour
     {       
         while (_healthBar.value != _player.Health)
         {
-            _isWorkChangeBar = true;
             _healthBar.value = Mathf.MoveTowards(_healthBar.value, _player.Health, _speed * Time.deltaTime);
-            yield return 0;
+            yield return null;
         }
 
-        _isWorkChangeBar = false;
+        _changeBar = null;
     }
 }

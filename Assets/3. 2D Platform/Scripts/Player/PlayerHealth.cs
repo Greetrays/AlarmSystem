@@ -7,10 +7,10 @@ public class PlayerHealth : MonoBehaviour
 {
     [SerializeField] private float _health;
     [SerializeField] private float _maxHealth;
-    [SerializeField] private UnityEvent _onCure;
-    [SerializeField] private UnityEvent _onHit;
+    [SerializeField] private UnityEvent _cure;
+    [SerializeField] private UnityEvent _hit;
 
-    public event UnityAction OnChanged;
+    public event UnityAction Changed;
 
     public float Health => _health;
     public float MaxHealth => _maxHealth;
@@ -35,7 +35,7 @@ public class PlayerHealth : MonoBehaviour
             if (_health > 0)
             {
                 ChangeHealth(-enemy.Damage);
-                _onHit.Invoke();
+                _hit?.Invoke();
             }
 
             if (_health <= 0)
@@ -54,13 +54,13 @@ public class PlayerHealth : MonoBehaviour
                 ChangeHealth(healt.Size);
             }
 
-            _onCure.Invoke();
+            _cure?.Invoke();
         }
     }
 
     private void ChangeHealth(float health)
     {
         _health += health;
-        OnChanged();
+        Changed?.Invoke();
     }
 }

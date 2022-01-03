@@ -11,7 +11,7 @@ public class MoneyBar : MonoBehaviour
     private void Start()
     {
         _moneyUI.text = _player.CountMoney.ToString();
-        _player.OnRecive += UpdateBar;
+        _player.Recive += UpdateBar;
     }
 
     /*private void OnEnable()

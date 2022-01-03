@@ -66,7 +66,7 @@ public class PlayerMover : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.TryGetComponent<Ground>(out Ground ground))
+        if (collision.gameObject.TryGetComponent(out Ground ground))
         {
             _isGround = true;
         }
@@ -74,7 +74,7 @@ public class PlayerMover : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.TryGetComponent<Ground>(out Ground ground))
+        if (collision.gameObject.TryGetComponent(out Ground ground))
         {
             _isGround = false;
         }

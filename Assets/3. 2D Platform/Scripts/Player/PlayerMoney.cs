@@ -7,12 +7,12 @@ using UnityEngine.Events;
 
 public class PlayerMoney : MonoBehaviour
 { 
-    [SerializeField] private UnityEvent _onRecive;
+    [SerializeField] private UnityEvent _recive;
 
-    public event UnityAction OnRecive
+    public event UnityAction Recive
     {
-        add => _onRecive.AddListener(value);
-        remove => _onRecive.RemoveListener(value);
+        add => _recive?.AddListener(value);
+        remove => _recive?.RemoveListener(value);
     }
 
     public int CountMoney { get; private set; }
@@ -22,7 +22,7 @@ public class PlayerMoney : MonoBehaviour
         if (collision.gameObject.TryGetComponent(out Money money))
         {
             CountMoney += money.Count;
-            _onRecive.Invoke();
+            _recive?.Invoke();
         }
     }
 }
