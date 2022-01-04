@@ -9,11 +9,9 @@ public class EnemyMovement : MonoBehaviour
 
     private Transform[] _targetPoints;
     private int _currentPoint;
-    private bool _isGame;
 
     private void Start()
     {
-        _isGame = false;
         _targetPoints = new Transform[_puth.transform.childCount];
 
         for (int i = 0; i < _puth.transform.childCount; i++)
@@ -24,24 +22,16 @@ public class EnemyMovement : MonoBehaviour
     
     private void Update()
     {
-        if (_isGame)
+        transform.position = Vector3.MoveTowards(transform.position, _targetPoints[_currentPoint].position, _speed * Time.deltaTime);
+
+        if (transform.position == _targetPoints[_currentPoint].position)
         {
-            transform.position = Vector3.MoveTowards(transform.position, _targetPoints[_currentPoint].position, _speed * Time.deltaTime);
+            _currentPoint++;
 
-            if (transform.position == _targetPoints[_currentPoint].position)
+            if (_currentPoint >= _targetPoints.Length)
             {
-                _currentPoint++;
-
-                if (_currentPoint >= _targetPoints.Length)
-                {
-                    _currentPoint = 0;
-                }
+                _currentPoint = 0;
             }
-        }
-    }
-
-    public void SwitchGame(bool isGame)
-    {
-        _isGame = isGame;
+        }       
     }
 }

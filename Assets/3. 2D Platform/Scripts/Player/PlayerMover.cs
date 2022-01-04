@@ -14,41 +14,36 @@ public class PlayerMover : MonoBehaviour
     private bool _isGround;
     private Rigidbody2D _rigidbody2D;
     private Animator _animator;
-    private bool _isGame;
 
     private void Start()
     {
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _animator = GetComponent<Animator>();
-        _isGame = false;
         _isFacingRight = true;
     }
     
     private void Update()
     {
-        if (_isGame)
+        if (Input.GetKey(KeyCode.D))
         {
-            if (Input.GetKey(KeyCode.D))
-            {
-                Flip(false);
+            Flip(false);
 
-                Vector3 newPosition = new Vector3(_speed * Time.deltaTime, 0, 0);
-                transform.Translate(newPosition);
-                _animator.SetBool(AnimatorPlayerController.States.IsWalk, true);
-            }
-            else if (Input.GetKey(KeyCode.A))
-            {
-                Flip(true);
-
-                Vector3 newPosition = new Vector3(-1 * _speed * Time.deltaTime, 0, 0);
-                transform.Translate(newPosition);
-                _animator.SetBool(AnimatorPlayerController.States.IsWalk, true);
-            }
-            else
-            {
-                _animator.SetBool(AnimatorPlayerController.States.IsWalk, false);
-            }
+            Vector3 newPosition = new Vector3(_speed * Time.deltaTime, 0, 0);
+            transform.Translate(newPosition);
+            _animator.SetBool(AnimatorPlayerController.States.IsWalk, true);
         }
+        else if (Input.GetKey(KeyCode.A))
+        {
+            Flip(true);
+
+            Vector3 newPosition = new Vector3(-1 * _speed * Time.deltaTime, 0, 0);
+            transform.Translate(newPosition);
+            _animator.SetBool(AnimatorPlayerController.States.IsWalk, true);
+        }
+        else
+        {
+            _animator.SetBool(AnimatorPlayerController.States.IsWalk, false);
+        }        
     }
 
     private void FixedUpdate()
@@ -57,11 +52,6 @@ public class PlayerMover : MonoBehaviour
         {
             _rigidbody2D.AddForce(Vector3.up * _jumpForce);
         }
-    }
-
-    public void SwitchGame(bool isGame)
-    {
-        _isGame = isGame;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

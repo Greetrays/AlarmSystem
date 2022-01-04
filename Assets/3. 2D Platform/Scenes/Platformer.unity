@@ -527,30 +527,6 @@ Transform:
   m_Father: {fileID: 1697891066}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &365055038 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -5737877198011151374, guid: b6bc65c93db17c44c8cd24941e8b6e69,
-    type: 3}
-  m_PrefabInstance: {fileID: 1592891977}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2165ee85be92f1c4fa4918f3ac9bb53f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &413121975 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -5737877198011151374, guid: b6bc65c93db17c44c8cd24941e8b6e69,
-    type: 3}
-  m_PrefabInstance: {fileID: 1257793265905493165}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2165ee85be92f1c4fa4918f3ac9bb53f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &441887889 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 915707852, guid: 72820c74324da624cb1b44aab93ea32a,
@@ -672,18 +648,6 @@ Transform:
   m_Father: {fileID: 2140124333}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &483839767 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9168405451855842028, guid: 72820c74324da624cb1b44aab93ea32a,
-    type: 3}
-  m_PrefabInstance: {fileID: 9168405451611299107}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 758414802}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d1d017d24cb3854ba6bf4b7f2b9d5b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &611777975
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,18 +1236,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &691546652 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -5737877198011151374, guid: b6bc65c93db17c44c8cd24941e8b6e69,
-    type: 3}
-  m_PrefabInstance: {fileID: 4978884850684297041}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 691546644}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2165ee85be92f1c4fa4918f3ac9bb53f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &724386204
 GameObject:
   m_ObjectHideFlags: 0
@@ -1950,50 +1902,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 691546652}
-        m_MethodName: SwitchGame
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 413121975}
-        m_MethodName: SwitchGame
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 365055038}
-        m_MethodName: SwitchGame
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1873547683}
-        m_MethodName: SwitchGame
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
       - m_Target: {fileID: 1974370608}
         m_MethodName: SetActive
         m_Mode: 6
@@ -2005,36 +1913,14 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
-      - m_Target: {fileID: 820743264}
+      - m_Target: {fileID: 1171886697}
         m_MethodName: SwitchGame
-        m_Mode: 6
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 483839767}
-        m_MethodName: SwitchGame
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 1859712134}
-        m_MethodName: SwitchGame
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
+          m_FloatArgument: 1
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
@@ -2315,6 +2201,7 @@ GameObject:
   - component: {fileID: 1171886694}
   - component: {fileID: 1171886693}
   - component: {fileID: 1171886696}
+  - component: {fileID: 1171886697}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -2483,6 +2370,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1171886697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171886692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49b54cd088002a34e881155e2b63e244, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1199943974
 GameObject:
   m_ObjectHideFlags: 0
@@ -4932,18 +4831,6 @@ Transform:
   m_Father: {fileID: 2140124333}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1873547683 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -5737877198011151374, guid: b6bc65c93db17c44c8cd24941e8b6e69,
-    type: 3}
-  m_PrefabInstance: {fileID: 461299074}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2165ee85be92f1c4fa4918f3ac9bb53f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1921538474
 GameObject:
   m_ObjectHideFlags: 0
@@ -5228,64 +5115,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 691546652}
+      - m_Target: {fileID: 1171886697}
         m_MethodName: SwitchGame
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 413121975}
-        m_MethodName: SwitchGame
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 365055038}
-        m_MethodName: SwitchGame
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1873547683}
-        m_MethodName: SwitchGame
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_MethodName: SwitchGame
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 483839767}
-        m_MethodName: SwitchGame
-        m_Mode: 6
+        m_Mode: 4
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

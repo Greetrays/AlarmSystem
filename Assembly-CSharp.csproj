@@ -76,6 +76,7 @@
     <Compile Include="Assets\3. 2D Platform\Scripts\MoneyBar.cs" />
     <Compile Include="Assets\3. 2D Platform\Scripts\ObjectSpawner.cs" />
     <Compile Include="Assets\3. 2D Platform\Scripts\ObjectUsed.cs" />
+    <Compile Include="Assets\3. 2D Platform\Scripts\PauseButton.cs" />
     <Compile Include="Assets\3. 2D Platform\Scripts\Player\AnimatorPlayerController.cs" />
     <Compile Include="Assets\3. 2D Platform\Scripts\Player\HealthBar.cs" />
     <Compile Include="Assets\3. 2D Platform\Scripts\Player\PlayerHealth.cs" />
