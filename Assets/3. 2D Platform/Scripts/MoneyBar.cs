@@ -8,16 +8,16 @@ public class MoneyBar : MonoBehaviour
     [SerializeField] private PlayerMoney _player;
     [SerializeField] private TMP_Text _moneyUI;
 
-    private void Start()
+    private void OnEnable()
     {
         _moneyUI.text = _player.CountMoney.ToString();
         _player.Recive += UpdateBar;
     }
 
-    /*private void OnEnable()
+    private void OnDisable()
     {
-        _player.OnRecive -= UpdateBar;
-    }*/
+        _player.Recive -= UpdateBar;
+    }
 
     private void UpdateBar()
     {

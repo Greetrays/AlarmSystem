@@ -11,7 +11,6 @@ public class HealthBar : MonoBehaviour
     [SerializeField] private UnityEvent _healthChanged;
 
     private float _speed;
-    private bool _isWorkChangeBar;
     private Slider _healthBar;
     private Coroutine _changeBar;
 
@@ -22,11 +21,19 @@ public class HealthBar : MonoBehaviour
         _healthBar.maxValue = _player.MaxHealth;
         _healthBar.value = _player.Health;
         _changeBar = null;
-
-        _player.Changed += OnStartChangeBar;
     }
 
-    private void OnStartChangeBar()
+    private void OnEnable()
+    {
+        _player.Changed += TryRunChangeBar;
+    }
+
+    private void OnDisable()
+    {
+        _player.Changed -= TryRunChangeBar;
+    }
+
+    private void TryRunChangeBar()
     {
         if (_changeBar == null)
         {
