@@ -4685,7 +4685,7 @@ MonoBehaviour:
   _maxDistance: 14
   _object: {fileID: -8535698211357284457, guid: c44f612874c7e084e8e2e9ece3202214,
     type: 3}
-  _delay: 2
+  _delay: 60
 --- !u!4 &1859712135
 Transform:
   m_ObjectHideFlags: 0
