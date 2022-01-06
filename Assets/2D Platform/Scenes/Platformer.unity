@@ -5737,42 +5737,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 1974370609}
     m_Modifications:
     - target: {fileID: 715871291, guid: 9f7a188c1189d7c42b1e390a0b8268b4, type: 3}
-      propertyPath: _healthChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 715871291, guid: 9f7a188c1189d7c42b1e390a0b8268b4, type: 3}
-      propertyPath: _player
+      propertyPath: _healthObject
       value: 
       objectReference: {fileID: 441887889}
     - target: {fileID: 715871291, guid: 9f7a188c1189d7c42b1e390a0b8268b4, type: 3}
-      propertyPath: _healthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 715871291, guid: 9f7a188c1189d7c42b1e390a0b8268b4, type: 3}
-      propertyPath: _healthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      propertyPath: _speed
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 715871291, guid: 9f7a188c1189d7c42b1e390a0b8268b4, type: 3}
-      propertyPath: _healthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 758414802}
-    - target: {fileID: 715871291, guid: 9f7a188c1189d7c42b1e390a0b8268b4, type: 3}
-      propertyPath: _healthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 715871291, guid: 9f7a188c1189d7c42b1e390a0b8268b4, type: 3}
-      propertyPath: _healthChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 9181376364586228471, guid: 9f7a188c1189d7c42b1e390a0b8268b4,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9181376364586228471, guid: 9f7a188c1189d7c42b1e390a0b8268b4,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9181376365293864720, guid: 9f7a188c1189d7c42b1e390a0b8268b4,
         type: 3}
@@ -5887,42 +5857,12 @@ PrefabInstance:
     - target: {fileID: 9181376365293864751, guid: 9f7a188c1189d7c42b1e390a0b8268b4,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9181376365293864751, guid: 9f7a188c1189d7c42b1e390a0b8268b4,
-        type: 3}
-      propertyPath: m_Value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9181376365293864751, guid: 9f7a188c1189d7c42b1e390a0b8268b4,
-        type: 3}
-      propertyPath: m_MaxValue
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 9181376365293864751, guid: 9f7a188c1189d7c42b1e390a0b8268b4,
-        type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9181376365293864751, guid: 9f7a188c1189d7c42b1e390a0b8268b4,
-        type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9181376365293864751, guid: 9f7a188c1189d7c42b1e390a0b8268b4,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 758414802}
-    - target: {fileID: 9181376365293864751, guid: 9f7a188c1189d7c42b1e390a0b8268b4,
-        type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9181376365293864751, guid: 9f7a188c1189d7c42b1e390a0b8268b4,
-        type: 3}
-      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f7a188c1189d7c42b1e390a0b8268b4, type: 3}
